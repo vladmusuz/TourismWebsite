@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("../images/usa.jpg"); }
+.img2 { background-image: url("../images/uk.jpg"); }
+.img3 { background-image: url("../images/moskow.jpg"); }
+.img4 { background-image: url("../images/rio.jpg"); }
+.img5 { background-image: url("../images/jpn.jpg"); }
+.img6 { background-image: url("../images/aus.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-text a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.bg-text a:hover {
+    color: black;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    text-decoration: initial;
+}
+
+
+
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRIPSHIP</title>
+</head>
+<body>
+
+    <div>
+
+        <div>
+
+            <span>TRIPSHIP</span>
+
+        </div>
+        <div>
+
+            <div>
+
+                <span>Welcome to TRIPSHIP</span>
+
+            </div>
+
+            <div>
+
+                <p>Our mission at tripship is giving everybody confidence with excitement, vigor and liveliness</p>
+
+            </div>
+
+            <div>
+
+                <div>Student 1</div>
+                <div>Student 2</div>
+                <div>Student 3</div>
+                <div>Student 4</div>
+
+            </div>
+
+            <div>
+
+                <div>See our team</div>
+                <div>Learn more</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+div class="bg-img">
+
+<a href="../main.html"><div id="logo">TRIPSHIP</div></a>
+
+<div id="fontRegulator">
+
+    <span id="fontSize">Font-size:</span>
+
+    <select  onchange="myFunction(this);" size="3">
+
+
+        <option>30%</option>
+        <option>medium</option>
+        <option>120%</option>
+
+    </select>
+</div>
+
+</div>
+
+<section class="nav">
+
+    <div id="navbar">
+        <a href="landing_page.html">HOME</a>
+        <a href="#ourTeam">OUR TEAM</a>
+        <a href="#feedback">LEAVE A FEEDBACK</a>
+        <a href="#quiz">QUIZ TIME</a>
+    </div>
+
+</section>
+
+</header>
+
+<main>
+
+    <p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop screens sizes.</p>
+    <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+
+    <div class="parallax"></div>
+
+    <div style="height:1000px;background-color:red;font-size:36px">
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="parallax"></div>
+
+
+
+    * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+    body, html {
+    height: 100%;
+    }
+
+    /* ------------------------------------------------ HEADER */
+    #logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: Skia;
+    font-size: 2em;
+    color: #333333;
+    }
+
+    #fontRegulator {
+    position: relative;
+    float: right;
+    color: #f2f2f2;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    background-color: #444;
+    font-size: 0.8em;
+    font-family: "Andale Mono";
+    box-shadow: 5px 5px 20px black;
+    }
+
+    #fontRegulator span {
+    float: left;
+    width: 100%;
+    color: darkorange;
+    margin-bottom: 10px;
+    }
+
+    #fontRegulator select {
+    background-color: floralwhite;
+    border: none;
+    font-size: 0.8em;
+    font-family: "Andale Mono";
+    color: black;
+    }
+
+    .bg-img {
+    background-image: url("../images/header-bg.jpg");
+
+    min-height: 380px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    }
+
+    #navbar {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    }
+
+    #navbar a:hover {
+    background-color: #777;
+    }
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .sticky + .content {
+    padding-top: 60px;
+    }
+
+    /* ------------------------------------------------ MAIN  */
+    .parallax {
+    /* The image used */
+    background-image: url('../images/1.png');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+    .parallax {
+    background-attachment: scroll;
+    }
+    }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+
+    <title>TRIPSHIP - Feedback</title>
+</head>
+<body>
+
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="../main.html">HOME</a>
+            <a href="../main.html">ABOUT</a>
+            <a href="gallary.html">GALLARY</a>
+            <a href="quiz.html">QUIZ</a>
+        </div>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer; padding: 10px;" id="open-btn" onclick="openNav()">&#9776; open</span>
+
+
+
+
+    <div>
+        <form action="/action_page.php" class="container">
+
+            <h1> Leave a Comment</h1>
+
+            <div id="myDIV" class="header">
+                <h2 style="margin:5px">Write here</h2>
+
+                <input type="text" id="nameText" placeholder="Name...">
+                <span style="text-shadow: none" class="addBtn">Your Name</span>
+
+                <input type="number" id="rate" name="quantity" min="1" max="5" placeholder="Rate us 1...5"><br>
+                <span style="text-shadow: none" class="addBtn">Rate from 1 to 5</span>
+
+                <input  type="text" id="myInput" placeholder="Comment...">
+                <span style="text-shadow: none" onclick="newElement()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL">
+                <li>Rate: 4, Kamol: 'This website is really hot'</li>
+            </ul>
+        </form>
+    </div>
+
+
+
+    <script src="../js/feedback.js"></script>
+
+</body>
+</html>

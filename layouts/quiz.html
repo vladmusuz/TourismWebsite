@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+
+    <title>TRIPSHIP - Quiz</title>
+</head>
+<body>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="../main.html">HOME</a>
+                <a href="../main.html">ABOUT</a>
+                <a href="gallary.html">GALLARY</a>
+                <a href="quiz.html">QUIZ</a>
+            </div>
+
+        </div>
+        <span style="font-size:30px;cursor:pointer; padding: 10px;" id="open-btn" onclick="openNav()">&#9776; open</span>
+
+
+
+    <div id="containerQuiz">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress">Progress</div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+
+
+    <script src="../js/quiz.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
